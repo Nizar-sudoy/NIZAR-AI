@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>NIZAR AI</title>
+
+<style>
+
+body {
+
+  background: #080d18;
+
+  color: white;
+
+  font-family: Arial;
+
+  text-align: center;
+
+  padding: 40px 15px;
+
+}
+
+h1 { color: #00e5a0; }
+
+input {
+
+  padding: 15px;
+
+  width: 80%;
+
+  border-radius: 10px;
+
+}
+
+button {
+
+  padding: 13px 25px;
+
+  margin: 10px;
+
+  background: #00e5a0;
+
+  border: 0;
+
+  border-radius: 10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>NIZAR AI</h1>
+
+<p>Your Personal AI Assistant</p>
+
+<input id="msg" placeholder="Write your message">
+
+<button onclick="send()">SEND</button>
+
+<p id="reply"></p>
+
+<script>
+
+function send() {
+
+  let message = document.getElementById("msg").value;
+
+  document.getElementById("reply").innerText =
+
+    "NIZAR AI: I received your message: " + message;
+
+}
+
+</script>
+
+</body>
+
+</html>
